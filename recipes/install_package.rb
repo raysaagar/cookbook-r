@@ -21,6 +21,7 @@
 
 package 'r-base' do
   version node['r']['version'] if node['r']['version']
+  options '--force-yes'
   action :install
 end
 
